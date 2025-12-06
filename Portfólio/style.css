@@ -1,0 +1,93 @@
+/* Zerar o margin e padding, alem de não permitir rolagem lateral */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/* Zerar o margin eo padding em algumas classes */
+.zero-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Configuração das linhas */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+/* Configuração das colunas */
+.col-sm-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CABEÇALHO/NAVBAR: Fundo e Cor do Texto */
+.navbar {
+    background-color: #5695CC !important;
+}
+.navbar-brand,
+.navbar-nav a {
+    color: white !important;
+}
+/* Espaçamento entre os itens da lista */
+ul{
+    gap: 20px;
+}
+
+/* LINKS DE CONTORNO (Adryan, Murilo, Erlon) */
+.btn-outline-info {
+    border-color: #6BBAFF !important; 
+}
+.btn-outline-info:hover {
+    background-color: #6BBAFF !important; /* Fundo Destaque no Hover */
+    color: #365D80 !important; /* Texto Escuro no Hover */
+}
+
+/* LINK ATIVO (Home) */
+.nav-link.active {
+    background-color: #365D80 !important; 
+    color: white !important;
+}
+
+/* BOTÕES PRINCIPAIS (See Profile / Ir) */
+.btn-primary {
+    background-color: #365D80 !important; 
+    border-color: #365D80 !important;
+}
+.btn-primary:hover {
+    background-color: #6BBAFF !important; 
+    border-color: #6BBAFF !important;
+}
+
+/* 1. CARDS: Borda Colorida */
+.card {
+    border: 2px solid #6BBAFF !important;
+    border-radius: 10px;
+}
+/* Configuração do footer */
+footer {
+    background-color: #365D80 !important;
+    color: white !important; 
+    border-top: 2px solid #5C6F80; 
+}
+
+/* seleçaõ de todo conteudo do footer */
+footer table,
+footer table tr,
+footer table tbody,
+footer table thead,
+footer table th,
+footer table td {
+    background-color: #365D80 !important; 
+    color: white !important; 
+}
+
+/* Texto Secundário no Footer */
+footer .text-muted {
+    color: white !important; 
+}
