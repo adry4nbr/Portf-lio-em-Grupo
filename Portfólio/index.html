@@ -2,232 +2,195 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- Importa o Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Importa o Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <!-- Importa o Bootstrap JS (carousel e outros componentes) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Portfólio</title>
 </head>
 <body>
-<header class="container-fluid zero-padding">
-    <!-- Barra de navegação do topo -->
-    <nav class="navbar navbar-expand-sm">
+    <header class="container-fluid zero-padding">
+        <!-- Barra de navegação do topo -->
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid d-flex">
+                <!-- Logo ou nome da marca -->
+                <a class="navbar-brand" href="index.html">Portfólio</a>
 
-    <div class="container-fluid d-flex">
+                <!-- Links do menu -->
+                <ul class="navbar-nav nav-pills">
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link btn btn-outline-info" href="#">Adryan</a>
+                    </li>
 
-        <!-- Logo ou nome da marca -->
-        <a class="navbar-brand" href="index.html">Portfólio</a>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link btn btn-outline-info" href="#">Murilo</a>
+                    </li>
 
-        <!-- Links do menu -->
-        <ul class="navbar-nav nav-pills">
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link btn btn-outline-info" href="#">Erlon</a>
+                    </li>
 
-        <li class="nav-item flex-fill">
-            <a class="nav-link btn btn-outline-info" href="#">Adryan</a>
-        </li>
+                    <li class="nav-item flex-fill">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>  
+    </header>
 
-        <li class="nav-item flex-fill">
-            <a class="nav-link btn btn-outline-info" href="#">Murilo</a>
-        </li>
+    <!-- Seção principal com o carrossel OBS: Hero estava dando problemas no meu navegador(Chrome) então coloquei section para resolver o problema-->
+    <section class="container-fluid zero-padding">
 
-        <li class="nav-item flex-fill">
-            <a class="nav-link btn btn-outline-info" href="#">Erlon</a>
-        </li>
+        <!-- Início do carrossel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-        <li class="nav-item flex-fill">
-            <a class="nav-link active" href="index.html">Home</a>
-        </li>
+        <!-- Indicadores (bolinhas abaixo do carousel) -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- Imagens do carrossel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/background-2.jpg" alt="" class="background-img-carousel" style="width: 100%; height: 500px;">
+                <h4>
+                    
+                </h4>
+            </div>
+            <div class="carousel-item">
+                <!-- Imagem temporaria do carrosel -->
+                <img src="imagens/Cafe_preto.png" alt="Chicago" class="d-block" style="width:100%; height: 500px;">
+            </div>
+            <div class="carousel-item">
+                <!-- Imagem temporaria do carrosel -->        
+                <img src="imagens/wallpapersden.com_satoru-gojo-manga-jujutsu-kaisen_2563x1355.jpg" alt="New York" class="d-block" style="width:100%; height: 500px;">
+            </div>
+        </div>
+        
+        <!-- Controles laterais (setas) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
 
-        </ul>
-    </div>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
 
-    </nav>  
-</header>
-
-<!-- Seção principal com o carrossel OBS: Hero estava dando problemas no meu navegador(Chrome) então coloquei section para resolver o problema-->
-<section class="container-fluid zero-padding">
-
-<!-- Início do carrossel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-  <!-- Indicadores (bolinhas abaixo do carousel) -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-  </div>
-  
-  <!-- Imagens do carrossel -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-        <!-- Imagem temporaria do carrosel -->
-      <img src="imagens/cafe_expresso.webp" alt="Los Angeles" class="d-block" style="width:100%; height: 500px;">
-    </div>
-    <div class="carousel-item">
-        <!-- Imagem temporaria do carrosel -->
-      <img src="imagens/Cafe_preto.png" alt="Chicago" class="d-block" style="width:100%; height: 500px;">
-    </div>
-    <div class="carousel-item">
-       <!-- Imagem temporaria do carrosel -->        
-      <img src="imagens/wallpapersden.com_satoru-gojo-manga-jujutsu-kaisen_2563x1355.jpg" alt="New York" class="d-block" style="width:100%; height: 500px;">
-    </div>
-  </div>
-  
-  <!-- Controles laterais (setas) -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-
-</div>
-
-<!-- Texto abaixo do carrossel sem proposito ainda, totalmente alteravel ou descartavel-->
-<div class="container-fluid mt-3">
-  <h3>Carousel Example</h3>
-  <p>The following example shows how to create a basic carousel with indicators and controls.</p>
-</div>
-</section>
+        </div>
+        <hr>
+    </section>
 
 
-<!-- Conteúdo principal da página -->
-<main class="container-fluid">
+    <!-- Conteúdo principal da página -->
+    <main class="container-fluid">
 
-    <!-- Primeira linha de cards -->
-    <!-- OBS: COLOQUE SUAS INFORMAÇÕES NA MESMA COLUNA -->
+        <!-- Primeira linha de cards -->
+        <!-- OBS: COLOQUE SUAS INFORMAÇÕES NA MESMA COLUNA -->
+        <div class="row gap-5 mb-4">
+
+            <!-- Card para colocar sua imagem, seu nome e uma breve explicação sua-->
+            <div class="col-lg-3" >  
+                <div class="card">
+                    <img class="card-img-top" src="imagens/wallpapersden.com_satoru-gojo-manga-jujutsu-kaisen_2563x1355.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Adryan G.</h4>
+                        <p class="card-text">
+                            <span class="knowloadge-h">
+                                Desenvolvedor (Area)
+                            </span>
+                            <hr>
+                            <span class="knowloadge-h">
+                                Universitário em:
+                            </span> 
+                            <p class="knowloadge-p">
+                                Uninassau
+                            </p>
+                            <span class="knowloadge-h">
+                                Conhecimentos:
+                            </span>
+                            <p class="knowloadge-p">
+                                <!-- COLOQUE OS CONHECIMENTOS AQUI.-->
+                            </p>
+                        </p>
+                        <a href="#" class="btn btn-primary">Ver perfil</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card para colocar sua imagem, seu nome e uma breve explicação sua-->
+            <div class="col-lg-3">  
+                <div class="card">
+                    <img class="card-img-top" src="imagens/Musashi.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Murilo H.</h4>
+                        <p class="card-text">
+                            <span class="knowloadge-h">
+                                Desenvolvedor Back-End
+                            </span>
+                            <hr>
+                            <span class="knowloadge-h">
+                                Universitário em:
+                            </span> 
+                            <p class="knowloadge-p">
+                                Uninassau
+                            </p>
+                            <span class="knowloadge-h">
+                                Conhecimentos:
+                            </span>
+                            <p class="knowloadge-p">
+                                Java, Python, SQL, HTML/CSS, JavaScript, Git, Docker, Postman
+                            </p>
+                        </p>
+                        <a href="#" class="btn btn-primary">Ver perfil</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card para colocar sua imagem, seu nome e uma breve explicação sua-->
+            <div class="col-lg-3" >  
+                <div class="card">
+                    <img class="card-img-top" src="imagens/wallpapersden.com_satoru-gojo-manga-jujutsu-kaisen_2563x1355.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Erlon M.</h4>
+                        <p class="card-text">
+                            <span class="knowloadge-h">
+                                Desenvolvedor (Area)
+                            </span>
+                            <hr>
+                            <span class="knowloadge-h">
+                                Universitário em:
+                            </span> 
+                            <p class="knowloadge-p">
+                                Uninassau
+                            </p>
+                            <span class="knowloadge-h">
+                                Conhecimentos:
+                            </span>
+                            <p class="knowloadge-p">
+                                <!-- COLOQUE OS CONHECIMENTOS AQUI.-->
+                            </p>
+                        </p>
+                        <a href="#" class="btn btn-primary">Ver perfil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segunda linha de cards -->
     <div class="row gap-5 mb-4">
 
-        <!-- Card para colocar sua imagem, seu nome e uma breve explicação sua-->
+        <!-- Local onde irá ter uma breve introdução a respeito de si -->
+
+        <!-- Primeiro card do Sobre Mim -->
         <div class="col-lg-3" >  
             <div class="card">
-                <img class="card-img-top" src="imagens/wallpapersden.com_satoru-gojo-manga-jujutsu-kaisen_2563x1355.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                    <h4 class="card-title">John Doe1</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card para colocar sua imagem, seu nome e uma breve explicação sua-->
-        <div class="col-lg-3">  
-            <div class="card">
-                <img class="card-img-top" src="imagens/wallpapersden.com_satoru-gojo-manga-jujutsu-kaisen_2563x1355.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">John Doe2</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card para colocar sua imagem, seu nome e uma breve explicação sua-->
-        <div class="col-lg-3" >  
-            <div class="card">
-                <img class="card-img-top" src="imagens/wallpapersden.com_satoru-gojo-manga-jujutsu-kaisen_2563x1355.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">John Doe3</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- segunda linha de cards -->
-    <div class="row gap-5 mb-4">
-
-        <!-- Card individual do linkedin -->
-        <div class="col-lg-3" >  
-            <div class="card">
-                <img class="card-img-top" src="imagens/logo_linkedin.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title border-top">John Doe</h4>  <!-- Seu Nome-->
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">Ir</a> <!-- seu link do linkedin-->
-                </div>
-            </div>
-        </div>
-
-        <!-- Card repetido do linkedin -->
-        <div class="col-lg-3">  
-            <div class="card">
-                <img class="card-img-top" src="imagens/logo_linkedin.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title border-top">John Doe</h4> <!-- Seu Nome-->
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">Ir</a>  <!-- seu link do linkedin-->
-                </div>
-            </div>
-        </div>
-
-        <!-- Card repetido do linkedin -->
-        <div class="col-lg-3" >  
-            <div class="card">
-                <img class="card-img-top" src="imagens/logo_linkedin.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title border-top">John Doe</h4> <!-- Seu Nome-->
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">Ir</a>  <!-- seu link do linkedin-->
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- Terceira linha de cards -->
-    <div class="row gap-5 mb-4">
-
-        <!-- Card para do github -->
-        <div class="col-lg-3" >  
-            <div class="card">
-                <img class="card-img-top" src="imagens/logo_gitHub.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title border-top">John Doe</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">Ir</a> <!-- seu link do gitHub-->
-                </div>
-            </div>
-        </div>
-
-        <!-- Card repetido do github -->
-        <div class="col-lg-3">  
-            <div class="card">
-                <img class="card-img-top" src="imagens/logo_gitHub.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title border-top">John Doe</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">Ir</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card repetido do github -->
-        <div class="col-lg-3" >  
-            <div class="card">
-                <img class="card-img-top" src="imagens/logo_gitHub.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title border-top">John Doe</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">Ir</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- Quarta linha de cards -->
-    <div class="row gap-5 mb-4">
-
-        <!--talvez um Card para colocar foto do curriculo, não tive uma ideia muito boa, se tiver é so colocar aqui -->
-        <div class="col-lg-3" >  
-            <div class="card">
-                <img class="card-img-top" src="imagens/wallpapersden.com_satoru-gojo-manga-jujutsu-kaisen_2563x1355.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+                    <h4 class="card-title">Sobre mim</h4>
+                    <hr>
+                    <p class="card-text about-me-text">Some example text some example text. John Doe is an architect and engineer</p>
                 </div>
             </div>
         </div>
@@ -235,11 +198,10 @@
         <!-- Card repetido -->
         <div class="col-lg-3">  
             <div class="card">
-                <img class="card-img-top" src="imagens/wallpapersden.com_satoru-gojo-manga-jujutsu-kaisen_2563x1355.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+                    <h4 class="card-title">Sobre mim</h4>
+                    <hr>
+                    <p class="card-text about-me-text">Sou Desenvolvedor Back-End (foco principal), com interesse e experiência prática em desafios Full-Stack. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas (ADS) na UNINASSAU de Recife. Busco aplicar meu conhecimento em linguagens como Java e Python para construir sistemas robustos e escaláveis. Confira meus projetos e códigos no GitHub abaixo.</p>
                 </div>
             </div>
         </div>
@@ -247,53 +209,129 @@
         <!-- Card repetido -->
         <div class="col-lg-3" >  
             <div class="card">
-                <img class="card-img-top" src="imagens/wallpapersden.com_satoru-gojo-manga-jujutsu-kaisen_2563x1355.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+                    <h4 class="card-title">Sobre mim</h4>
+                    <hr>
+                    <p class="card-text about-me-text">Some example text some example text. John Doe is an architect and engineer</p>
                 </div>
             </div>
         </div>
 
+        <!-- segunda linha de cards -->
+        <div class="row gap-5 mb-4 second-line">
+
+            <!-- Card individual do linkedin -->
+            <div class="col-lg-3" >  
+                <div class="card">
+                    <img class="card-img-top linkedin-img" src="imagens/logo_linkedin.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title border-top">LinkedIn</h4>  <!-- Seu Nome-->
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary">Ver LinkedIn de Adryan</a> <!-- seu link do linkedin-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card repetido do linkedin -->
+            <div class="col-lg-3">  
+                <div class="card">
+                    <img class="card-img-top linkedin-img" src="imagens/logo_linkedin.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title border-top">LinkedIn</h4> <!-- Seu Nome-->
+                        <p class="card-text">Acompanhe meu histórico profissional, minhas experiências e meu desenvolvimento contínuo no mercado. É o lugar ideal para validar minhas qualificações</p>
+                        <a href="https://www.linkedin.com/in/murilo-henrique2004/" class="btn btn-primary">Ver LinkedIn de Murilo</a>  <!-- seu link do linkedin-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card repetido do linkedin -->
+            <div class="col-lg-3" >  
+                <div class="card">
+                    <img class="card-img-top linkedin-img" src="imagens/logo_linkedin.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title border-top">LinkedIn</h4> <!-- Seu Nome-->
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary">Ver LinkedIn de Erlon</a>  <!-- seu link do linkedin-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Terceira linha de cards -->
+        <div class="row gap-5 mb-4">
+
+            <!-- Card para do github -->
+            <div class="col-lg-3" >  
+                <div class="card">
+                    <img class="card-img-top github-img" src="imagens/logo_gitHub.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title border-top">GitHub</h4>
+                        <p class="card-text">Aqui estão localizados todos os meus projetos em andamento e finalizados.</p>
+                        <a href="#" class="btn btn-primary">GitHub de Adryan</a> <!-- seu link do gitHub-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card repetido do github -->
+            <div class="col-lg-3">  
+                <div class="card">
+                    <img class="card-img-top github-img" src="imagens/logo_gitHub.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title border-top">GitHub</h4>
+                        <p class="card-text">Aqui estão localizados todos os meus projetos em andamento e finalizados.</p>
+                        <a href="https://github.com/Hosz" class="btn btn-primary">GitHub de Murilo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card repetido do github -->
+            <div class="col-lg-3" >  
+                <div class="card">
+                    <img class="card-img-top github-img" src="imagens/logo_gitHub.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title border-top">GitHub</h4>
+                        <p class="card-text">Aqui estão localizados todos os meus projetos em andamento e finalizados.</p>
+                        <a href="#" class="btn btn-primary">GitHub de Erlon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-</main>
+    </main>
 
-<!-- Rodapé -->
-<footer class="container-fluid py-4">
-    <!-- Tabela com informações simples -->
-    <table class="table table-borderless mx-auto w-75">
-        <thead>
-            <tr>
-                <th class="text-center text-muted mt-3 mb-0">Nome</th>
-                <th class="text-center text-muted mt-3 mb-0">Telefone</th>
-                <th class="text-center text-muted mt-3 mb-0">Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="text-center text-muted mt-3 mb-0">John</td>
-                <td class="text-center text-muted mt-3 mb-0">000</td>
-                <td class="text-center text-muted mt-3 mb-0">john@example.com</td>
-            </tr>
-            <tr>
-                <td class="text-center text-muted mt-3 mb-0">Mary</td>
-                <td class="text-center text-muted mt-3 mb-0">000</td>
-                <td class="text-center text-muted mt-3 mb-0">mary@example.com</td>
-            </tr>
-            <tr>
-                <td class="text-center text-muted mt-3 mb-0">July</td>
-                <td class="text-center text-muted mt-3 mb-0">000</td>
-                <td class="text-center text-muted mt-3 mb-0">july@example.com</td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- Rodapé -->
+    <footer class="container-fluid py-4">
+        <!-- Tabela com informações simples -->
+        <table class="table table-borderless mx-auto w-75">
+            <thead>
+                <tr>
+                    <th class="text-center text-muted mt-3 mb-0 tr-1">Nome</th>
+                    <th class="text-center text-muted mt-3 mb-0">Telefone</th>
+                    <th class="text-center text-muted mt-3 mb-0 tr-2">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center text-muted mt-3 mb-0">Adryan Galdino</td>
+                    <td class="text-center text-muted mt-3 mb-0">(81) 9.8307-2643</td>
+                    <td class="text-center text-muted mt-3 mb-0">john@example.com</td>
+                </tr>
+                <tr>
+                    <td class="text-center text-muted mt-3 mb-0">Murilo Henrique</td>
+                    <td class="text-center text-muted mt-3 mb-0">(81) 9.9577-8733</td>
+                    <td class="text-center text-muted mt-3 mb-0">murilobento197@gmail.com</td>
+                </tr>
+                <tr>
+                    <td class="text-center text-muted mt-3 mb-0 tr-3">Erlon Matheus</td>
+                    <td class="text-center text-muted mt-3 mb-0">(81) 9.9956-1562</td>
+                    <td class="text-center text-muted mt-3 mb-0 tr-4">july@example.com</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <!-- Texto de direitos autorais -->
-    <div class="p text-center">&copy; 2025 Portfólio em grupo. Todos os direitos reservados.</div>
-</footer>
-
+        <!-- Texto de direitos autorais -->
+        <div class="p text-center">&copy; 2025 Portfólio em grupo. Todos os direitos reservados.</div>
+    </footer>
 </body>
 </html>

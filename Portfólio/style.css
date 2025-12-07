@@ -1,13 +1,24 @@
+/* IMPORT DE FONTE EXTERNA */
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* Zerar o margin e padding, alem de não permitir rolagem lateral */
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background: #8b80728f;
 }
 /* Zerar o margin eo padding em algumas classes */
 .zero-padding {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Configuração das linhas */
@@ -25,15 +36,56 @@ body {
     align-items: center;
 }
 
-
-/* CABEÇALHO/NAVBAR: Fundo e Cor do Texto */
-.navbar {
-    background-color: #5695CC !important;
+/* Configuração dos icones do LinkedIn e do GitHub  */
+.linkedin-img, .github-img {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
 }
+
+/* Centralização dos Icons */
+.card {
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    box-shadow: 10px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Cor de fundo do NAVBAR */
+.navbar {
+    background-color: #442a02;
+}
+
+/* Cor de texto do NAVBAR */
 .navbar-brand,
 .navbar-nav a {
-    color: white !important;
+    color: white;
 }
+
+/* Configuração de fonte do NAVBAR */
+.navbar-brand, .navbar-nav {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar-nav {
+    font-size: 19px;
+    font-weight: 300;
+}
+
+/* =================================== */
+
 /* Espaçamento entre os itens da lista */
 ul{
     gap: 20px;
@@ -41,53 +93,93 @@ ul{
 
 /* LINKS DE CONTORNO (Adryan, Murilo, Erlon) */
 .btn-outline-info {
-    border-color: #6BBAFF !important; 
+    border-color: #583500; 
+    background: #523509;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.2);
 }
 .btn-outline-info:hover {
-    background-color: #6BBAFF !important; /* Fundo Destaque no Hover */
-    color: #365D80 !important; /* Texto Escuro no Hover */
+    background-color: #794b06; /* Fundo Destaque no Hover */
+
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 /* LINK ATIVO (Home) */
-.nav-link.active {
-    background-color: #365D80 !important; 
-    color: white !important;
+.navbar-nav .nav-link.active {
+    background-color:#915701;
+    color: white;
 }
 
 /* BOTÕES PRINCIPAIS (See Profile / Ir) */
 .btn-primary {
-    background-color: #365D80 !important; 
-    border-color: #365D80 !important;
+    background-color: #5F3E0C; 
+    border-color: #020100;
 }
 .btn-primary:hover {
-    background-color: #6BBAFF !important; 
-    border-color: #6BBAFF !important;
+    background-color: #915701; 
+    border-color: #000000;
 }
 
 /* 1. CARDS: Borda Colorida */
 .card {
-    border: 2px solid #6BBAFF !important;
+    border: 2px solid #815411;
     border-radius: 10px;
 }
 /* Configuração do footer */
 footer {
-    background-color: #365D80 !important;
-    color: white !important; 
-    border-top: 2px solid #5C6F80; 
-}
-
-/* seleçaõ de todo conteudo do footer */
-footer table,
-footer table tr,
-footer table tbody,
-footer table thead,
-footer table th,
-footer table td {
-    background-color: #365D80 !important; 
-    color: white !important; 
+    background-color: #442a02;
+    color: white; 
+    border-top: 2px solid #000000; 
 }
 
 /* Texto Secundário no Footer */
 footer .text-muted {
-    color: white !important; 
+    color: white; 
+}
+
+/* Ajuste de bordas das informações no footer */
+.tr-1 {
+    border-top-left-radius: 40px;
+}
+
+.tr-2 {
+    border-top-right-radius: 40px;
+}
+
+.tr-3 {
+    border-bottom-left-radius: 40px;
+}
+
+.tr-4 {
+    border-bottom-right-radius: 40px;
+}
+/* ============================================== */
+
+/* Centralização dos textos nos cards */
+.card-body {
+    display: inline-block;
+    text-align: center;
+}
+
+/* Fonte da área de informações dos primeiros cards */
+.knowloadge-p {
+    font-style: italic;
+}
+
+/* Ajustes de fontes nos titulos dos primeiros cards */
+.knowloadge-h {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Configurações do texto no "Sobre Mim" */
+.about-me-text {
+    font-family: "Lato", sans-serif;
+    font-weight: 350;
+    font-style: italic;
+    text-align: left;
 }
