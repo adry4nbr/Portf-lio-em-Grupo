@@ -1,45 +1,127 @@
-Guia de Uso do Portfólio em Grupo
-Este guia rápido explica como navegar e interagir com as principais seções do nosso Portfólio Web, desenvolvido usando HTML, CSS e Bootstrap 5.
+# Guia de Uso do Portfólio em Grupo
 
-Seções do Site
-O site é dividido em três áreas principais: o Cabeçalho (Header), o Conteúdo Principal (Main) e o Rodapé (Footer).
+Este README descreve o funcionamento do Portfólio Web criado utilizando **HTML5**, **CSS3** e **Bootstrap 5**, baseado exatamente no código fornecido.
 
-1. Cabeçalho (Header) e Navegação
-Localizado no topo da página, o cabeçalho contém o menu de navegação:
+---
 
-Links de Navegação: Permitem acesso rápido à página Home e a links individuais dos membros do grupo (Adryan, Murilo, Erlon).
+## Estrutura Geral do Projeto
 
-Menu Responsivo: A barra de navegação se adapta automaticamente a telas menores (como celulares), agrupando os links em um menu hamburguer (colapsável) para facilitar a visualização e navegação.
+O site é composto por três áreas principais:
 
-2. Conteúdo Principal (Main)
-Esta é a área central da página, projetada para apresentar visualmente os membros e seus projetos:
+* **Cabeçalho (Header)**
+* **Conteúdo Principal (Main)**
+* **Rodapé (Footer)**
 
-Carrossel (Seção Hero): Um slideshow interativo que exibe uma galeria de imagens na parte superior da página, servindo como uma introdução dinâmica. Use as setas laterais ou os indicadores (pontos) para navegar entre as imagens.
+Todo o layout utiliza classes do Bootstrap, complementado por um arquivo CSS personalizado (`style.css`).
 
-Galeria de Cards: Abaixo do carrossel, você encontrará uma série de Cards organizados em linhas. Cada Card representa um membro do grupo ou um link importante:
+---
 
-Cards Individuais: Exibem uma foto do membro, seu nome, uma breve descrição e um botão para "See Profile" (Ver Perfil).
+## Cabeçalho e Navegação
 
-Cards de Contato/Redes: Existem cards específicos com logotipos do LinkedIn e GitHub, que levam diretamente aos perfis dos membros (basta clicar no botão "Ir").
+O topo do site possui uma **navbar responsiva**, configurada da seguinte forma:
 
-3. Rodapé (Footer)
-O rodapé contém informações de contato e direitos autorais.
+### Links de Navegação
 
-Tabela de Contato: Uma tabela simples e centralizada que lista o Nome, Telefone e Email dos membros para contato rápido.
+* **Home** (com estado ativo destacado)
+* **Adryan** – Link para o LinkedIn
+* **Murilo** – Link para o LinkedIn
+* **Erlon** – Link para o LinkedIn
 
-Direitos Autorais: Informações sobre o ano de criação e direitos reservados do portfólio.
+### Menu Responsivo
 
-Como Contribuir/Executar
-Este é um projeto estático, o que significa que não requer configurações complexas ou banco de dados.
+Em telas menores, o menu se transforma em um ** botão hambúrguer**, utilizando o Collapse do Bootstrap.
 
-Clone ou Baixe o Repositório: Obtenha todos os arquivos do projeto.
+---
 
-Abra o index.html: Simplesmente clique duas vezes no arquivo index.html. O site será aberto em seu navegador padrão.
+## Carrossel (Hero)
 
-Para Edições: Para alterar conteúdo, cores ou layout, modifique os arquivos:
+A seção inicial do conteúdo principal contém um **carrossel Bootstrap** com três imagens:
 
-index.html: Para estrutura de conteúdo (HTML).
+* Cada imagem possui **títulos e subtítulos centralizados**, estilizados no CSS.
+* Possui **setas de navegação** e **indicadores** para trocar as imagens.
 
-style.css (ou bloco <style>): Para estilos de cor e layout customizados.
+As frases são estilizadas por meio da classe personalizada `.frase-carrosel`.
 
-OBS: Esse site ainda tem alguns pontos que não possuem responsividade.
+---
+
+## Cards de Apresentação
+
+Logo abaixo do carrossel há três grupos de cards:
+
+### Cards Individuais (Apresentação)
+
+Cada membro possui um card com:
+
+* Nome
+* Função (Front-End / Back-End)
+* Instituição (Uninassau)
+* Lista de conhecimentos técnicos
+* Botão **"Ver Perfil"** levando ao GitHub
+
+Os cards incluem efeitos de hover definidos no CSS (`transform` e `box-shadow`).
+
+---
+
+### Cards "Sobre Mim"
+
+Cards com textos de apresentação pessoal.
+Estilização especial aplicada através de `.about-me-text`.
+
+---
+
+### Cards de Redes Sociais
+
+Incluem cartões com logos de:
+
+* **LinkedIn** (um para cada membro)
+* **GitHub** (um para cada membro)
+
+Cada card contém botão que direciona para o perfil correspondente.
+
+As imagens são estilizadas com o CSS personalizado `.linkedin-img` e `.github-img`.
+
+---
+
+## Rodapé
+
+O rodapé apresenta:
+
+### Tabela de Contatos
+
+Tabela com Nome, Telefone e Email dos três membros.
+Possui bordas arredondadas personalizadas (`tr-1`, `tr-2`, `tr-3`, `tr-4`).
+
+### Direitos Autorais
+
+Mensagem padrão:
+
+> “© 2025 Portfólio em grupo. Todos os direitos reservados.”
+
+---
+
+## Como Executar e Editar
+
+O projeto é **100% estático**, sem dependências externas além do Bootstrap CDN.
+
+### Executar
+
+1. Baixe ou clone os arquivos.
+2. Abra o arquivo **index.html** diretamente no navegador.
+
+### Editar
+
+* **index.html** → Estrutura, textos, links e carrossel
+* **style.css** → Estilização, cores, animações, responsividade personalizada
+
+---
+
+## Tecnologias Utilizadas
+
+* HTML5
+* CSS3 (personalizado)
+* Bootstrap 5 (via CDN)
+* Google Fonts (Open Sans, Alan Sans, Lato)
+
+---
+
+Se quiser que eu gere uma versão **mais completa**, com tabelas, imagens, instruções avançadas, ou até uma versão em inglês, é só pedir!
