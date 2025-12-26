@@ -121,8 +121,3 @@ O projeto é **100% estático**, sem dependências externas além do Bootstrap C
 * CSS3 (personalizado)
 * Bootstrap 5 (via CDN)
 * Google Fonts (Open Sans, Alan Sans, Lato)
-
----
-
-<a href="Bootstrap/Portfólio/index.html"> Portfolio em grupo</a>
-<a href="HTML-CSS/Projetos/Projeto1/index.html"> Pagina web</a>
